@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/startride/startride",
+    "pages/createride/createride",
+    "pages/list/list",
+    "pages/ranking/ranking",
+    "pages/history/history"
+  ],
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/history.png",
+        "iconPath": "images/history.png",
+        "pagePath": "pages/history/history",
+        "text": "History"
+      },
+      {
+        "selectedIconPath": "images/ranking.png",
+        "iconPath": "images/ranking.png",
+        "pagePath": "pages/index/index",
+        "text": "Home"
+      },  
+      {
+        "selectedIconPath": "images/ranking.png",
+        "iconPath": "images/ranking.png",
+        "pagePath": "pages/ranking/ranking",
+        "text": "Ranking"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

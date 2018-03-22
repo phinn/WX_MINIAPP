@@ -1,0 +1,6 @@
+<!--pages/startride/startride.wxml-->
+<view class="container">
+  <view class="section">
+    <text>startride.wxml</text>
+  </view>
+</view>

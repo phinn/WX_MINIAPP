@@ -1,0 +1,10 @@
+<template name="recordItem">
+    <view class="flex-item tui-list-head">
+        <text>{{item.type}}</text>
+        <text>{{item.distance}}</text>
+        <text>{{item.date}}</text>
+        <view bindtap="goHome">
+            <image src="../../images/1.png" class="navImg"></image>
+        </view>
+    </view>
+</template>

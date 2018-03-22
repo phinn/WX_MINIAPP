@@ -1,0 +1,6 @@
+<!--pages/history/history.wxml-->
+<import src="../../template/recordlist.wxml"/>
+<view class="tub-list-box">
+      <view class="tui-list-head">February</view>
+      <template wx:for="{{histories}}" is="historylist" data="{{item}}"></template>
+</view>

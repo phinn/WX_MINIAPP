@@ -1,0 +1,21 @@
+.tui-list-head{
+  background-color: #efeff4;
+  line-height: 80rpx;
+  color: #6d6d72;
+  padding: 0 10px;
+  font-size: 35rpx;
+  border-bottom: 1px solid #c8c7cc;
+}
+
+.tui-youjiantou:after{
+  font-family:"iconfont" !important;
+  content: '\e735';
+  font-size: 40rpx;
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-decoration: none;
+  right: 10rpx;
+}
