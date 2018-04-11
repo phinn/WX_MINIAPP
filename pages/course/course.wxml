@@ -1,0 +1,6 @@
+<!--pages/course/course.wxml-->
+<import src="../../template/courselist.wxml"/>
+
+<view class="tub-list-box">
+    <template wx:for="{{courseItems}}" is="courselist" data="{{item}}"></template>
+</view>

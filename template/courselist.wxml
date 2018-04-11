@@ -1,0 +1,32 @@
+<!--右侧有箭头  -->
+
+<template name="courselist">
+  <view class="course-list">
+    <navigator class="course-item" url="{{item.url}}">
+        <view class="course-img">
+          <image src="{{item.imgurl}}" mode="aspectFill"></image>
+        </view>
+        <view class="course-text">
+          <view class="course-text-left">
+            <view class="course-line">
+              <view class="course-tite">{{item.status}}</view>
+              <view class="course-tags">
+                <text>{{item.tag}}</text>
+              </view>
+            </view>
+            <text class="course-city">{{item.cal}}cal.   </text>
+            <text class="course-city">{{item.description}}</text>
+            </view>
+        </view>
+        <view class="course-text-right">
+          <view wx:if="{{item.used_time==null}}">
+              <button class="course_button">$6.99</button>
+          </view>
+          <view wx:else>
+              <view class="course_used_time">{{item.used_time}}</view>
+          </view> 
+          <view class="course_total_time">{{item.total_time}}</view>         
+        </view>    
+    </navigator>
+  </view>
+</template>

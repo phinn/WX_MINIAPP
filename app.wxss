@@ -1,6 +1,8 @@
 /**app.wxss**/
 @import "./src/css/icon.wxss";
 @import "./template/list.wxss";
+@import "./template/workoutlist.wxss";
+@import "./template/courselist.wxss";
 
 .iconfont {
   font-family:"iconfont" !important;

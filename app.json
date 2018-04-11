@@ -1,12 +1,21 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/start/start",
+    "pages/workout/workout",
+    "pages/signin/signin",
     "pages/logs/logs",
     "pages/startride/startride",
     "pages/createride/createride",
     "pages/list/list",
     "pages/ranking/ranking",
-    "pages/history/history"
+    "pages/history/history",
+    "pages/recordmain/recordmain",
+    "pages/course/course",
+    "pages/main/main",
+    "pages/createroom/createroom",
+    "pages/coursedetail/coursedetail",
+    "pages/coach/coach"
   ],
   "tabBar": {
     "color": "#a9b7b7",
@@ -16,20 +25,20 @@
       {
         "selectedIconPath": "images/history.png",
         "iconPath": "images/history.png",
-        "pagePath": "pages/history/history",
-        "text": "History"
+        "pagePath": "pages/index/index",
+        "text": "Workout"
       },
       {
         "selectedIconPath": "images/ranking.png",
         "iconPath": "images/ranking.png",
-        "pagePath": "pages/index/index",
-        "text": "Home"
-      },  
+        "pagePath": "pages/course/course",
+        "text": "Course"
+      },
       {
         "selectedIconPath": "images/ranking.png",
         "iconPath": "images/ranking.png",
         "pagePath": "pages/ranking/ranking",
-        "text": "Ranking"
+        "text": "More"
       }
     ]
   },

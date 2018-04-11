@@ -1,0 +1,4 @@
+<!--pages/createroom/createroom.wxml-->
+<view>
+  <view>add friends</view>
+</view>

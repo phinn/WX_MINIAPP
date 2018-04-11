@@ -11,9 +11,7 @@ Page({
     array: [{
       mode: 'scaleToFill',
       text: 'scaleToFill：不保持纵横比缩放图片，使图片完全适应'
-    }],
-    src: '../../ps.png',
-    recordItem: { "distance": "386.23km"}
+    }]
   },
   //事件处理函数
   bindViewTap: function() {
@@ -22,10 +20,14 @@ Page({
     })
   },
   onLoad: function () {
-    this.setData({
-      newRecordItems: [{ "title": "Subtitle", "url": "../createride/createride" }],
-      recordItems: [{ "distance": "386.23km", "type": "feedtype", "date": "080318", "url": "../list/list" }, { "distance": "310.23km", "type": "feedtype", "date": "080320" }, { "distance": "386.23km", "type": "feedtype", "date": "080318", "url": "../list/list" }, { "distance": "386.23km", "type": "feedtype", "date": "080318", "url": "../list/list" }]});
+    /*wx.navigateTo({
+      url: '../workout/workout'
+    })*/
     
+    this.setData({
+      workoutItems: [{ "title": "GO RUN", "type": "feedtype", "date": "080318", "imgurl": "../../images/1.png", "url": "../createroom/createroom" }, { "title": "TREADMILL", "type": "feedtype", "date": "080320", "imgurl": "../../images/1.png" }, { "title": "CYCLING", "type": "feedtype", "date": "080318", "imgurl": "../../images/1.png", "url": "../list/list" }]
+    });
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

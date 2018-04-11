@@ -1,0 +1,7 @@
+<!--pages/workout/workout.wxml-->
+<import src="../../template/workoutlist.wxml"/>
+
+<view class="tub-list-box">
+    <view class="tui-list-head">Workouts</view>
+    <template wx:for="{{workoutItems}}" is="workoutlist" data="{{item}}"></template>
+</view>

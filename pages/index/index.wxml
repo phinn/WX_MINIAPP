@@ -1,17 +1,15 @@
 <!--index.wxml-->
-<import src="../../template/recordlist.wxml"/>
+<!--<import src="../../template/recordlist.wxml"/>-->
 
 <wxs src="index.wxs" module="tools" />
-<view class="tub-list-box">
-      <view class="tui-list-head">New Start</view>
-      <template wx:for="{{newRecordItems}}" is="recordlistN" data="{{item}}"></template>
-</view>
-<view class="tub-list-box">
-      <view class="tui-list-head">Relay Game</view>
-      <template wx:for="{{recordItems}}" is="recordlist" data="{{item}}"></template>
-</view>
-<view class="container">  
+<!--<view class="container">  
   <view class="saoma" bindtap="click">点我扫一扫</view>  
   <view class="show">{{show}}</view>  
-</view> 
+</view>-->
+<import src="../../template/workoutlist.wxml"/>
+
+<view class="tub-list-box">
+    <template wx:for="{{workoutItems}}" is="workoutlist" data="{{item}}"></template>
+</view>
+
 

@@ -1,0 +1,11 @@
+<!--pages/recordmain/recordmain.wxml-->
+<import src="../../template/recordlist.wxml"/>
+
+<view class="tub-list-box">
+    <view class="tui-list-head">New Start</view>
+    <template wx:for="{{newRecordItems}}" is="recordlistN" data="{{item}}"></template>
+</view>
+<view class="tub-list-box">
+    <view class="tui-list-head">Relay Game</view>
+    <template wx:for="{{recordItems}}" is="recordlist" data="{{item}}"></template>
+</view>

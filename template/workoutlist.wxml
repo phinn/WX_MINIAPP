@@ -1,0 +1,10 @@
+<!--右侧有箭头  -->
+
+<template name="workoutlist">
+  <view class="service-list">
+    <navigator class="service-item" url="{{item.url}}">
+      <image class="service-img" src="{{item.imgurl}}" mode="aspectFill"></image>
+      <view class="service-text">{{item.title}}</view>     
+    </navigator>
+  </view>
+</template>
