@@ -1,4 +1,4 @@
-// pages/coursedetail/coursedetail.js
+// pages/more/more.js
 Page({
 
   /**
@@ -15,12 +15,18 @@ Page({
     this.setData({
       "url": "../coursedetail/coursedetail",
       "imgurl": "../../images/1.png",
-      "coach_name": "Coach",
-      "coach_description": "The head coach for 4 years / ACEsfddsfsdfds",
-      "course_name": "Monument Valley 2",
-      "course_description": "Blast waves of enemies",
-      "course_price": "$6.99"
-    });
+      "workItems":[
+        { "url": "", "imgurl": "../../images/1.png", "title": "Task Management"},
+        { "url": "", "imgurl": "../../images/1.png", "title": "Graphic" },
+        { "url": "", "imgurl": "../../images/1.png", "title": "Ranking" }
+      ],
+      "settingItems": [
+        { "url": "", "imgurl": "../../images/1.png", "title": "Bluetooth" },
+        { "url": "", "imgurl": "../../images/1.png", "title": "Sensors" },
+        { "url": "", "imgurl": "../../images/1.png", "title": "Updates" },
+        { "url": "", "imgurl": "../../images/1.png", "title": "Setting" }
+      ]
+    })
   },
 
   /**

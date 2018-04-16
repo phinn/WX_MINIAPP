@@ -35,6 +35,10 @@
   display: flex;
   flex-direction: column;
 }
+.course-text-right button {
+  background-color: #297cf6;
+  color:#fafffe;
+}
 .course-line {
   display: flex;
   flex-direction:row;

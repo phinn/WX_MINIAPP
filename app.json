@@ -15,7 +15,8 @@
     "pages/main/main",
     "pages/createroom/createroom",
     "pages/coursedetail/coursedetail",
-    "pages/coach/coach"
+    "pages/coach/coach",
+    "pages/more/more"
   ],
   "tabBar": {
     "color": "#a9b7b7",
@@ -37,7 +38,7 @@
       {
         "selectedIconPath": "images/ranking.png",
         "iconPath": "images/ranking.png",
-        "pagePath": "pages/ranking/ranking",
+        "pagePath": "pages/more/more",
         "text": "More"
       }
     ]

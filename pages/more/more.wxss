@@ -1,0 +1,13 @@
+/* pages/more/more.wxss */
+.root{
+  background-color: #efeff6;
+}
+.tui-menu-list.tui-youjiantou{
+  background-color: white;
+}
+.tub-list-box.workitem{
+  margin-top:40px;
+}
+.tub-list-box.settings{
+  margin-top:40px;
+}

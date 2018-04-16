@@ -24,3 +24,17 @@
     <text>{{item}}</text>
   </view>
 </template>
+<template name="listWithImage">
+  <view class="tui-menu-list tui-youjiantou">
+    <navigator url="{{item.url}}">
+      <view class="list-h-line">
+        <view class="list-img">
+            <image src="{{item.imgurl}}" mode="aspectFill"></image>
+        </view>
+        <view class="list-text">
+          <text>{{item.title}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</template>

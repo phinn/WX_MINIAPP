@@ -1,0 +1,23 @@
+<!--pages/more/more.wxml-->
+<import src="../../template/list.wxml"/>
+
+<view class="root">
+  <view class="tui-menu-list tui-youjiantou">
+    <navigator url="{{url}}">
+      <view class="course-item">
+        <view class="course-img">
+          <image src="{{imgurl}}" mode="aspectFill"></image>
+        </view>
+        <view>
+          <text class="login">Login</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="tub-list-box workitem">
+    <template wx:for="{{workItems}}" is="listWithImage" data="{{item}}"></template>
+  </view>
+  <view class="tub-list-box settings">
+    <template wx:for="{{settingItems}}" is="listWithImage" data="{{item}}"></template>
+  </view>
+</view>

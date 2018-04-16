@@ -1,2 +1,40 @@
 <!--pages/coursedetail/coursedetail.wxml-->
-<text>pages/coursedetail/coursedetail.wxml</text>
+<view>
+  <view class="tui-menu-list tui-youjiantou">
+    <navigator url="{{url}}">
+      <view class="course-item">
+        <view class="course-img">
+          <image src="{{imgurl}}" mode="aspectFill"></image>
+        </view>
+        <view>
+          <text class="course-vline name">{{coach_name}}</text>
+          <text class="course-vline description">{{coach_description}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+  <view class="course-detail-title">
+    <view class="course-text-left">
+      <text class="course-vline name">{{course_name}}</text>
+      <text class="course-vline description">{{course_description}}</text>
+    </view>
+    <view class="course-text-right">
+      <button class="course_button">{{course_price}}</button>
+    </view>
+  </view>
+  <view class="course-detail">
+    <view class="course-detail-header">
+      <view class="course-detail-headeritem">
+        <text>Stunning</text>
+        <view>*****</view>
+      </view>
+      <view class="course-detail-headeritem-right">
+        <text>Wed</text>
+        <view>LaQuishaMane</view>
+      </view>     
+    </view>
+    <view>
+      This game is absolutely wonderful.I had been waiting for more levels to be released for quite some time - so the fact that they released ad entirely seperate app made me so excited.The colors, story and levels are both beautiful and challenging in a way that makes you not want to put your
+    </view>   
+  </view>
+</view>

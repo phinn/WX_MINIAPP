@@ -26,12 +26,18 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 1,
 			"list": [
 				{
 					"id": -1,
 					"name": "testcourse",
-					"pathName": "pages/course/course"
+					"pathName": "pages/course/course",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "testmore",
+					"pathName": "pages/more/more"
 				}
 			]
 		}
