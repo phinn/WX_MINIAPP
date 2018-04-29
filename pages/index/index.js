@@ -25,7 +25,7 @@ Page({
     })*/
     
     this.setData({
-      workoutItems: [{ "title": "GO RUN", "type": "feedtype", "date": "080318", "imgurl": "../../images/1.png", "url": "../createroom/createroom" }, { "title": "TREADMILL", "type": "feedtype", "date": "080320", "imgurl": "../../images/1.png" }, { "title": "CYCLING", "type": "feedtype", "date": "080318", "imgurl": "../../images/1.png", "url": "../list/list" }]
+      workoutItems: [{ "title": "GO RUN", "type": "feedtype", "date": "080318", "imgurl": "../../src/images/workout/gorun@2x.png", "url": "../createroom/createroom" }, { "title": "TREADMILL", "type": "feedtype", "date": "080320", "imgurl": "../../src/images/workout/treadmill@2x.png" }, { "title": "CYCLING", "type": "feedtype", "date": "080318", "imgurl": "../../src/images/workout/cycling@2x.png", "url": "../list/list" }]
     });
 
     if (app.globalData.userInfo) {

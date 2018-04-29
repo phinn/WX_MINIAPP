@@ -14,6 +14,7 @@
       </view>
     </navigator>
   </view>
+  <button bindtap='onTap'>Test</button>
   <view class="tub-list-box workitem">
     <template wx:for="{{workItems}}" is="listWithImage" data="{{item}}"></template>
   </view>

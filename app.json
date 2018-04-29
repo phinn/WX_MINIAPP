@@ -24,20 +24,20 @@
     "borderStyle": "white",
     "list": [
       {
-        "selectedIconPath": "images/history.png",
-        "iconPath": "images/history.png",
+        "selectedIconPath": "src/icons/workout_fill@3x.png",
+        "iconPath": "src/icons/workout@3x.png",
         "pagePath": "pages/index/index",
         "text": "Workout"
       },
       {
-        "selectedIconPath": "images/ranking.png",
-        "iconPath": "images/ranking.png",
+        "selectedIconPath": "src/icons/course_fill@3x.png",
+        "iconPath": "src/icons/course@3x.png",
         "pagePath": "pages/course/course",
         "text": "Course"
       },
       {
-        "selectedIconPath": "images/ranking.png",
-        "iconPath": "images/ranking.png",
+        "selectedIconPath": "src/icons/more_fill@3x.png",
+        "iconPath": "src/icons/more@3x.png",
         "pagePath": "pages/more/more",
         "text": "More"
       }
@@ -45,8 +45,8 @@
   },
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "Newaitec",
+    "navigationBarTextStyle": "#fff"
   }
 }

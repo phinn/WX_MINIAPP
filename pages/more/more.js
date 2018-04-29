@@ -13,7 +13,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      "url": "../coursedetail/coursedetail",
+      "url": "",
       "imgurl": "../../images/1.png",
       "workItems":[
         { "url": "", "imgurl": "../../images/1.png", "title": "Task Management"},
@@ -76,5 +76,77 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+//'http://192.168.0.107/ainjet/api/ProductService.php/getProducts',
+  onTap: function() {
+    wx.request({
+      url: 'http://www.newaitec.com',
+      data: {
+        x: '',
+        y: ''
+      },
+      header: {
+        'Content-Type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res.data)
+      }
+    })  
+    
+    console.log("button tap")
+    var that = this;
+
+    wx.showLoading({
+
+      title: '开启蓝牙适配'
+
+    });
+
+    wx.openBluetoothAdapter({
+
+      success: function (res) {
+
+        console.log("初始化蓝牙适配器");
+
+        console.log(res);
+
+        that.getBluetoothAdapterState();
+
+      },
+
+      fail: function (err) {
+
+        console.log(err);
+
+        wx.showToast({
+
+          title: '蓝牙初始化失败',
+
+          icon: 'success',
+
+          duration: 2000
+
+        })
+
+        setTimeout(function () {
+
+          wx.hideToast()
+
+        }, 2000)
+
+      }
+
+    });
+
+    wx.onBluetoothAdapterStateChange(function (res) {
+      var available = res.available;
+
+      if (available) {
+
+        that.getBluetoothAdapterState();
+
+      }
+
+    })
   }
 })

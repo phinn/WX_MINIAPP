@@ -13,7 +13,7 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      workoutItems: [{ "title": "Indoor Trainer", "type": "feedtype", "date": "080318", "imgurl": "../../images/1.png", "url": "../list/list" }, { "title": "Treadmill", "type": "feedtype", "date": "080320", "imgurl": "../../images/1.png" }, { "title": "running", "type": "feedtype", "date": "080318", "imgurl": "../../images/1.png", "url": "../list/list" }, { "title": "Cycling", "type": "feedtype", "date": "080318", "imgurl": "../../images/1.png", "url": "../list/list" }]
+      workoutItems: [{ "title": "Indoor Trainer", "type": "feedtype", "date": "080318", "imgurl": "../../src/images/workout/gorun.png", "url": "../list/list" }, { "title": "Treadmill", "type": "feedtype", "date": "080320", "imgurl": "../../src/images/workout/treadmill.png" }, { "title": "running", "type": "feedtype", "date": "080318", "imgurl": "../../images/1.png", "url": "../list/list" }, { "title": "Cycling", "type": "feedtype", "date": "080318", "imgurl": "../../images/1.png", "url": "../list/list" }]
     });
   },
 

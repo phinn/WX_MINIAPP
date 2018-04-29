@@ -7,9 +7,8 @@
   <view class="show">{{show}}</view>  
 </view>-->
 <import src="../../template/workoutlist.wxml"/>
-
 <view class="tub-list-box">
-    <template wx:for="{{workoutItems}}" is="workoutlist" data="{{item}}"></template>
+      <template wx:for="{{workoutItems}}" is="workoutlist" data="{{item}}"></template>
 </view>
 
 

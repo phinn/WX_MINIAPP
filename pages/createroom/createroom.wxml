@@ -1,4 +1,7 @@
 <!--pages/createroom/createroom.wxml-->
 <view>
-  <view>add friends</view>
+  <view>
+    <cover-image class="header-img" src="../../src/images/createroom/banner01.png" mode="aspectFill"></cover-image>
+    <cover-image class="header-subimg" src="../../src/images/createroom/opacity44.png" mode="aspectFill"></cover-image>
+  </view>
 </view>
