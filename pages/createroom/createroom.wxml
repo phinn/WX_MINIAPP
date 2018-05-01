@@ -1,7 +1,21 @@
 <!--pages/createroom/createroom.wxml-->
-<view>
-  <view>
-    <cover-image class="header-img" src="../../src/images/createroom/banner01.png" mode="aspectFill"></cover-image>
-    <cover-image class="header-subimg" src="../../src/images/createroom/opacity44.png" mode="aspectFill"></cover-image>
-  </view>
+<view class="covercontainer">
+  <cover-view >
+    <cover-image class="header-img" src="../../src/images/createroom/banner01@2x.png" mode="scaleToFill"></cover-image>
+    <cover-image class="header-subimg" src="../../src/images/createroom/opacity44@2x.png" mode="aspectFill">
+    </cover-image>
+    <cover-view class="header-subimgtxt">
+    60Admin rids 02:30s
+    </cover-view>
+  </cover-view>
+  <button class="selectCtl" bindtap='onSelectCourse'>
+    <view>{{courseitem.coursename}}</view>
+    <view wx:if="{{courseitem.selected==null}}">默认</view>
+    <view wx:else><image class="selectimage" src="../../src/images/createroom/ Arrow Right Grey.png" mode="aspectFill"></image></view>
+  </button>
+  <button class="selectCtl" bindtap='onSelectMap'>
+    <view>{{mapitem.mapname}}</view>
+    <view wx:if="{{courseitem.selected==null}}">默认</view>
+    <view wx:else><image class="selectimage" src="../../src/images/createroom/ Arrow Right Grey.png" mode="aspectFill"></image></view>
+  </button>
 </view>

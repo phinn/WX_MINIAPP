@@ -11,7 +11,7 @@
             <view class="course-line">
               <view class="course-tite">{{item.status}}</view>
               <view class="course-tags">
-                <text>{{item.tag}}</text>
+                <image src="{{item.tagimgurl}}" mode="aspectFill"></image>
               </view>
             </view>
             <text class="course-city">{{item.cal}}cal.   </text>

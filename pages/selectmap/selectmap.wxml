@@ -1,0 +1,11 @@
+<!--pages/selectmap/selectmap.wxml-->
+<view class="tub-list-box">
+  <view class="tui-list-head">加入会员开启更多地图</view>
+  <block wx:for="{{mapItems}}" data="{{item}}">
+    <view>
+      <view>
+        <image src="{{item.rankingImageUrl}}" mode="aspectFill"></image>
+      </view>
+    </view>
+  </block>
+</view>

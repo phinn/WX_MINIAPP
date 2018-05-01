@@ -16,7 +16,9 @@
     "pages/createroom/createroom",
     "pages/coursedetail/coursedetail",
     "pages/coach/coach",
-    "pages/more/more"
+    "pages/more/more",
+    "pages/selectcourse/selectcourse",
+    "pages/selectmap/selectmap"
   ],
   "tabBar": {
     "color": "#a9b7b7",

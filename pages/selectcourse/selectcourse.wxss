@@ -1,0 +1,51 @@
+/* pages/selectcourse/selectcourse.wxss */
+.functionButton{
+  width:50%;
+  flex-direction:column;
+  margin-left:10rpx;
+  margin-right:10rpx;
+}
+.functionView{
+  display: flex;
+  margin-left:20rpx;
+  margin-right:20rpx;
+}
+.courseitem_container {
+  margin-bottom:10rpx;
+  margin-left:30rpx;
+  margin-right:30rpx;
+}
+.courseitem{
+  display: flex;
+	padding: 20rpx 0; 
+  border-bottom: 1rpx solid #e8e8e8;
+  flex-direction: row;
+  justify-content:flex-start;
+}
+.courseitem image{
+  width:56rpx;
+  height:56rpx;
+}
+.courseitem .coursename{
+  text-align: left;
+  width:350rpx;
+  margin-left:20rpx;
+}
+.courseitem .coursetime{
+  text-align: left;
+  margin-left:20%;
+}
+.courseitem.selected{
+  flex-direction: column;
+}
+.courseitem.selected .hline{
+  display:flex;
+  flex-direction: row;
+}
+.courseitem.selected image{
+  width:300rpx;
+  height:56rpx;
+}
+.coursediagram image {
+  width:100%;
+}

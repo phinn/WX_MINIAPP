@@ -1,4 +1,4 @@
-// pages/createroom/createroom.js
+// pages/selectmap/selectmap.js
 Page({
 
   /**
@@ -12,8 +12,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({ "courseitem": {"coursename":"选择课程"},
-      "mapitem": { "mapname": "选择地图" } })
+  
   },
 
   /**
@@ -27,7 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    
+  
   },
 
   /**
@@ -63,17 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
   
-  },
-
-  onSelectCourse: function() {
-    wx.navigateTo({
-      url: '../selectcourse/selectcourse'
-    })
-  },
-
-  onSelectMap: function () {
-    wx.navigateTo({
-      url: '../selectmap/selectmap'
-    })
   }
 })

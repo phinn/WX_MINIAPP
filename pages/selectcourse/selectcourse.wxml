@@ -1,0 +1,34 @@
+<!--pages/selectcourse/selectcourse.wxml-->
+<import src="../../template/selectcourselist.wxml"/>
+<view class="tub-list-box">
+    <block wx:for="{{courseItems}}" data="{{item}}">
+        <view class="courseitem_container" bindtap="onActive" id="{{index}}">
+        <view class="courseitem selected" wx:if="{{item.selected==true}}">
+          <view>{{item.coursename}}</view>
+          <view class="hline">
+            <view>{{item.description}}</view>
+            <view>{{item.distance}}</view>
+          </view>
+          <view class="hline">
+            <view><image src="{{item.rankingImageUrl}}" mode="aspectFill"></image></view>
+            <view>{{item.other}}</view>
+          </view>
+        </view>
+        <view wx:elif="{{item.selected==false}}" id="{{index}}">
+          <view class="courseitem">
+            <image src="../../src/images/course/Icon 02.png" mode="aspectFill"></image>
+            <view class="coursename">{{item.coursename}}</view>
+            <view class="coursetime">{{item.coursetime}}</view>
+          </view>
+        </view> 
+      </view>
+    </block>
+    <view class="coursediagram">
+        <image src="{{courseimageurl}}" mode="aspectFill"></image>
+    </view>
+</view>
+<view class="functionView">
+  <button class="functionButton" bindtap='onSelect'>选择</button>
+  <button class="functionButton" bindtap='onCancel'>取消</button>
+</view>
+

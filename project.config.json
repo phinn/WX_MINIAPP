@@ -21,6 +21,10 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
 			"currentL": -1,
 			"list": []
@@ -49,7 +53,14 @@
 				{
 					"id": -1,
 					"name": "testcreateroom",
-					"pathName": "pages/createroom/createroom"
+					"pathName": "pages/createroom/createroom",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "selectcourse",
+					"pathName": "pages/selectcourse/selectcourse",
+					"query": ""
 				}
 			]
 		}

@@ -7,11 +7,11 @@
 	border-bottom: 1rpx solid #e8e8e8;
 }
 .course-img{
-	width: 160rpx;
+	width: 130rpx;
 	height: 120rpx;
 }
 .course-item image{
-	width: 160rpx;
+	width: 120rpx;
 	height: 120rpx;
 }
 .course-text{
@@ -45,6 +45,10 @@
 }
 .course-tags{
 	margin: 6rpx 0;
+}
+.course-tags image {
+  width:150rpx;
+  height:25rpx;
 }
 .course-tags text{
 	padding: 6rpx 16rpx;
