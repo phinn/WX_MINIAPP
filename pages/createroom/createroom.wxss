@@ -25,3 +25,52 @@
   width: 16rpx;
   height:26rpx;
 }
+/*.radioItemContainer {
+  float:left;
+  width:22%;
+  margin-left:10rpx;
+  font-size:x-small;
+  background-color:#efeff5;
+  height:56rpx;
+  text-align: center;
+  border-radius: 5px;
+}
+.radioItemContainer:active {
+  background-color:#000;
+}
+.radioItemContainer label.active {
+  background-color:#000;
+}
+.radioItem {
+  font-size:small;
+}*/
+.flex{
+  display:flex;
+}
+.flex .item{
+  flex-direction: row;
+  margin-right:10rpx;
+}
+.service_selection {
+  padding: 15px 10px;
+  background: #fff;
+}
+
+.service_selection label {
+  background: #f0f1ec;
+  padding: 6px 7px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.service_selection .is_checked {
+  border: 1px solid #ffebbf;
+  background: #f9fbfc;
+}
+
+.btnNext{
+  background: #ffa000;
+  margin-left:50rpx;
+  margin-right:50rpx;
+  color:#fdfffe;
+}

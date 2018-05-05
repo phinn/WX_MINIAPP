@@ -2,10 +2,16 @@
 <view class="tub-list-box">
   <view class="tui-list-head">加入会员开启更多地图</view>
   <block wx:for="{{mapItems}}" data="{{item}}">
-    <view>
+    <view bindtap="onActive" class="map-item" id="{{index}}">
       <view>
-        <image src="{{item.rankingImageUrl}}" mode="aspectFill"></image>
+        <cover-image class="map" src="../../src/images/course/map001.png" mode="aspectFill"></cover-image>
+        <cover-image class="mask" src="../../src/images/course/map Mask.png" mode="aspectFill"></cover-image>
+        <!--<cover-image class="lock" src="../../src/images/course/lock.png" mode="aspectFill"></cover-image>-->
       </view>
     </view>
   </block>
+</view>
+<view class="functionView">
+  <button class="functionButton" bindtap='onSelect'>选择</button>
+  <button class="functionButton" bindtap='onCancel'>取消</button>
 </view>

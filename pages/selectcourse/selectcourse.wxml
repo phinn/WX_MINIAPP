@@ -10,7 +10,7 @@
             <view>{{item.distance}}</view>
           </view>
           <view class="hline">
-            <view><image src="{{item.rankingImageUrl}}" mode="aspectFill"></image></view>
+            <view><image src="{{item.rankingImageUrl}}" mode="scaleToFill"></image></view>
             <view>{{item.other}}</view>
           </view>
         </view>

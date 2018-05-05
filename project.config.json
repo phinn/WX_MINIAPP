@@ -61,6 +61,12 @@
 					"name": "selectcourse",
 					"pathName": "pages/selectcourse/selectcourse",
 					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "selectmap",
+					"pathName": "pages/selectmap/selectmap",
+					"query": ""
 				}
 			]
 		}

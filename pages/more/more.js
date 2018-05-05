@@ -80,7 +80,7 @@ Page({
 //'http://192.168.0.107/ainjet/api/ProductService.php/getProducts',
   onTap: function() {
     wx.request({
-      url: 'http://www.newaitec.com',
+      url: 'https://120.55.45.96',
       data: {
         x: '',
         y: ''

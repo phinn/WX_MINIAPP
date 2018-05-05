@@ -44,7 +44,7 @@
 }
 .courseitem.selected image{
   width:300rpx;
-  height:56rpx;
+  height:30rpx;
 }
 .coursediagram image {
   width:100%;

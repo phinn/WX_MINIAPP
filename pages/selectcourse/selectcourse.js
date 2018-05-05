@@ -14,15 +14,15 @@ Page({
   onLoad: function (options) {
     var rows = [
       { "selected": true, "coursename": "90min Riders", "coursetime": "01:30", "description": "American (Traditional)", "distance": "1,9km", "ranking": 4, "other": "(84) on Yelp", "courseimageurl": "../../src/images/course/grap W.png" },
-      { "selected": false, "coursename": "60admin Riders", "coursetime": "01:30", "description": "American (Traditional)", "distance": "1,9km", "ranking": 4, "other": "(84) on Yelp", "courseimageurl": "../../src/images/course/grapW.png" },
-      { "selected": false, "coursename": "treamdddksi", "coursetime": "01:30", "description": "American (Traditional)", "distance": "1,9km", "ranking": 4, "other": "(84) on Yelp", "courseimageurl": "../../src/images/course/grap W.png" },
-      { "selected": false, "coursename": "subtract 890km", "coursetime": "01:30", "description": "American (Traditional)", "distance": "1,9km", "ranking": 4, "other": "(84) on Yelp", "courseimageurl": "../../src/images/course/grap W.png" },
-      { "selected": false, "coursename": "difference intersect", "coursetime": "01:30", "description": "American (Traditional)", "distance": "1,9km", "ranking": 4, "other": "(84) on Yelp", "courseimageurl": "../../src/images/course/grap W.png" }
+      { "selected": false, "coursename": "60admin Riders", "coursetime": "01:30", "description": "American (Traditional)", "distance": "1,9km", "ranking": 4, "other": "(84) on Yelp", "courseimageurl": "../../src/images/course/grap W1.png" },
+      { "selected": false, "coursename": "treamdddksi", "coursetime": "01:30", "description": "American (Traditional)", "distance": "1,9km", "ranking": 4, "other": "(84) on Yelp", "courseimageurl": "../../src/images/course/grap W2.png" },
+      { "selected": false, "coursename": "subtract 890km", "coursetime": "01:30", "description": "American (Traditional)", "distance": "1,9km", "ranking": 4, "other": "(84) on Yelp", "courseimageurl": "../../src/images/course/grap W3.png" },
+      { "selected": false, "coursename": "difference intersect", "coursetime": "01:30", "description": "American (Traditional)", "distance": "1,9km", "ranking": 4, "other": "(84) on Yelp", "courseimageurl": "../../src/images/course/grap W4.png" }
     ]
     var courseimageurl="";
     for (var i = 0; i < rows.length;i++) 
     {
-      rows[i].rankingImageUrl = "../../src/images/course/star0" + rows[i].ranking + ".png";
+      rows[i].rankingImageUrl = "../../src/images/course/sstar0" + rows[i].ranking + ".png";
       if (rows[i].selected){
         courseimageurl = "../../src/images/course/grap W.png"
         this.activeItem = rows[i];
@@ -97,7 +97,6 @@ Page({
       }
     }
     this.setData(this.data)
-    console.log(this.activeItem)
   },
 
   onSelect: function() {

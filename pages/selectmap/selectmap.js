@@ -5,14 +5,27 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    var rows = [
+      { "selected": true, "mapname": "London", "mapImageUrl": "", "locked": false },
+      { "selected": false, "mapname": "Shanghai", "mapImageUrl": "", "locked": true},
+      { "selected": false, "mapname": "Tokyo", "mapImageUrl": "", "locked": true }
+    ]
+    for (var i = 0; i < rows.length; i++) {
+      if (rows[i].selected) {
+        this.activeItem = rows[i];
+      }
+    }
+
+    this.setData({
+      "mapItems": rows
+    })
   },
 
   /**
@@ -62,5 +75,46 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  onActive: function (event) {
+    for (var i = 0; i < this.data.mapItems.length; i++) {
+      if (event.currentTarget.id == i) {
+        this.activeItem = this.data.mapItems[i];
+        this.data.mapItems[i].selected = true
+        console.log(i);
+      }
+      else {
+        this.data.mapItems[i].selected = false
+      }
+    }
+    this.setData(this.data)
+  },
+
+  onSelect: function () {
+    var pages = getCurrentPages();
+    var currPage = pages[pages.length - 1];   //当前页面
+    var prevPage = pages[pages.length - 2];  //上一个页面
+
+    //直接调用上一个页面的setData()方法，把数据存到上一个页面中去
+    prevPage.setData({
+      mapitem: this.activeItem
+    })
+
+    wx.navigateBack({
+      delta: 1,
+      success: function (data) {
+        console.log(data)
+      }
+    })
+  },
+
+  onCancel: function () {
+    wx.navigateBack({
+      delta: 1,
+      success: function (data) {
+
+      }
+    })
   }
 })

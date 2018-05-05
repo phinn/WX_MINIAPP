@@ -18,4 +18,20 @@
     <view wx:if="{{courseitem.selected==null}}">默认</view>
     <view wx:else><image class="selectimage" src="../../src/images/createroom/ Arrow Right Grey.png" mode="aspectFill"></image></view>
   </button>
+  <radio-group bindchange="onRadioChange" >
+    <view class="service_selection flex"> 
+      <block wx:for="{{typeArray}}">
+          <view class="item">
+            <label class="{{item.checked?'is_checked':''}}">
+            {{item.name}}
+              <radio value="{{index}}" hidden="true" checked="{{item.checked}}"></radio>
+            </label>
+          </view>   
+      </block>
+    </view>
+  </radio-group>
 </view>
+<view>
+  <button class="btnNext" bindtap="onNext">NEXT</button>
+</view>
+

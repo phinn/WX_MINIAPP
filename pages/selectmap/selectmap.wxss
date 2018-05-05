@@ -1,1 +1,31 @@
 /* pages/selectmap/selectmap.wxss */
+.mask{
+  margin-top: -45%;
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+.lock{
+  margin-top: -45%;
+  margin-left:45%;
+  width:68px;
+  height:92px;
+  margin-bottom: 20rpx;
+}
+.map{
+  width: 100%;
+  margin-bottom: 20rpx;
+}
+.map:hover{
+  background-color: #fff;
+}
+.functionButton{
+  width:50%;
+  flex-direction:column;
+  margin-left:10rpx;
+  margin-right:10rpx;
+}
+.functionView{
+  display: flex;
+  margin-left:20rpx;
+  margin-right:20rpx;
+}
