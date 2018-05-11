@@ -18,7 +18,8 @@
     "pages/coach/coach",
     "pages/more/more",
     "pages/selectcourse/selectcourse",
-    "pages/selectmap/selectmap"
+    "pages/selectmap/selectmap",
+    "pages/signup/signup"
   ],
   "tabBar": {
     "color": "#a9b7b7",

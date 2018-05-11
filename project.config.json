@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -66,6 +66,18 @@
 					"id": -1,
 					"name": "selectmap",
 					"pathName": "pages/selectmap/selectmap",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "testsignin",
+					"pathName": "pages/signin/signin",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "testsignup",
+					"pathName": "pages/signup/signup",
 					"query": ""
 				}
 			]

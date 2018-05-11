@@ -1,0 +1,30 @@
+<!--pages/signup/signup.wxml-->
+<view class=""container>
+  <view class="login-form">  
+    <!--账号-->
+    <view class="inputView withLine"> 
+      <input class="inputText" placeholder="Email or Phone" bindinput="phoneInput" />
+    </view>
+      
+    <!--短信验证码-->
+    <view class="inputView withLine"> 
+      <input class="inputText withButton" password="true" placeholder="Code" bindinput="codeInput"/>
+      <button class="sendBtn">Send</button> 
+    </view> 
+
+    <!--密码-->
+    <view class="inputView withLine"> 
+      <input class="inputText" password="true" placeholder="Password" bindinput="password1Input" /> 
+    </view> 
+
+    <!--密码-->
+    <view class="inputView withLine"> 
+      <input class="inputText" password="true" placeholder="Password" bindinput="password2Input" /> 
+    </view> 
+      
+    <!--按钮-->
+    <view class="actionView"> 
+      <button class="nextBtn" type="primary">Next</button> 
+    </view> 
+ </view>
+</view>

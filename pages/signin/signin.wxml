@@ -1,32 +1,24 @@
 <!--pages/signin/signin.wxml-->
 <view class="container"> 
  <view class="login-icon"> 
- <!--<image class="login-img" src="../images/loginLog.jpg"></image>--> 
- <text>Welcome to\n</text>
- <text>NEWAITEC\n</text>
- <text>Greate new tools for notes synced to your icloud account</text>
+  <image class="login-img" src="../../src/images/auth/welcome.png"></image>
  </view> 
- <view class="login-from"> 
-  
- <!--账号-->
- <view class="inputView"> 
-  <!--<image class="nameImage" src="../images/name.png"></image>--> 
-  <label class="loginLab">账号</label> 
-  <input class="inputText" placeholder="请输入账号" bindinput="phoneInput" /> 
- </view> 
- <view class="line"></view> 
-  
- <!--密码-->
- <view class="inputView"> 
-  <!--<image class="keyImage" src="../images/key.png"></image>--> 
-  <label class="loginLab">密码</label> 
-  <input class="inputText" password="true" placeholder="请输入密码" bindinput="passwordInput" /> 
- </view> 
-  
- <!--按钮-->
- <view class="loginBtnView"> 
-  <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">register</button> 
-  <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">login</button> 
- </view> 
+ <view class="login-form">  
+    <!--账号-->
+    <view class="inputView withLine"> 
+      <input class="inputText" placeholder="Email or Phone" bindinput="phoneInput" />
+    </view>
+      
+    <!--密码-->
+    <view class="inputView withLine"> 
+      <input class="inputText" password="true" placeholder="Password" bindinput="passwordInput" /> 
+    </view> 
+      
+    <!--按钮-->
+    <view class="loginBtnView"> 
+      <!--<button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">register</button>-->
+      <navigator url="../signup/signup" class="regBtn">Register</navigator> 
+      <button class="loginBtn" type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}" disabled="{{disabled}}" bindtap="login">login</button> 
+    </view> 
  </view> 
 </view>

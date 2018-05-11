@@ -1,4 +1,4 @@
-/* pages/signin/signin.wxss */
+/* pages/signup/signup.wxss */
 page{ 
  height: 100%; 
 } 
@@ -11,16 +11,7 @@ page{
  box-sizing: border-box; 
  background-color: #fdffff;
 } 
-  
-/*登录图片*/
-.login-icon{ 
- flex: none; 
-} 
-.login-img{ 
- width: 750rpx;
- height:380rpx;
-} 
-  
+
 /*表单内容*/
 .login-form { 
  margin-top: 20px; 
@@ -31,6 +22,8 @@ page{
   
 .inputView { 
  line-height: 44px;
+ display: flex;
+ flex-direction: row;
 }
 
 .inputView.withLine{
@@ -45,8 +38,12 @@ page{
  font-size: 14px;
 }
 
+.inputText.withButton {
+  width:50%;
+} 
+
 /*按钮*/
-.loginBtnView { 
+.actionView { 
  display:flex;
  flex-direction: row;
  width: 100%; 
@@ -56,15 +53,12 @@ page{
  padding-bottom: 0px; 
 } 
   
-.loginBtn { 
+.nextBtn { 
  width: 50%; 
  margin-top: 35px;
  background: #f6af00 !important; 
- float:right;
 }
 
-.regBtn { 
- width: 50%; 
- margin-top: 35px;
-
+.sendBtn {
+  width:100px;
 }
